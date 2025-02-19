@@ -1,3 +1,3 @@
-module github.com/dreamsofcode-io/orders-api
+module github.com/razvanbucur360/orders-api
 
 go 1.20
