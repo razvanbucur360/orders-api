@@ -90,7 +90,7 @@ func (r *RedisRepo) DeleteById(ctx context.Context, id uint64) error {
 	}
 	
 	if _, err := txn.Exec(ctx); err != nil {
-		fmt.Errorf("Failed to exec: %w", err)
+		return fmt.Errorf("Failed to exec: %w", err)
 	}
 
 	return nil 
